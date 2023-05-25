@@ -12,7 +12,7 @@ return <div className={Styles.container}>
 
 
 
-<div className={Styles.logo}>
+<div className={Styles.logotipo}>
 
 <Image src={logo} />
 
