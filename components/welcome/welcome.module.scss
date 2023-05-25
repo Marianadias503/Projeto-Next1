@@ -1,0 +1,29 @@
+
+@import "/styles/mixins/colors.scss";
+
+
+.text{
+    h1{
+        font-weight: bold;
+        font-size: 71px;
+        color: black;
+    }
+
+    p{
+        font-size: 30px;
+        opacity: 0.8;
+        color: black;
+    }
+}
+
+.button{
+    padding: 15px 50px; //15px= em cima e em baixo....50px=aos lados
+    border-radius: 5px;
+    border: none;
+    
+    font-size: 16px;
+    font-weight: bold;
+    background-color: $white-color;
+    color: $purple-color;
+
+}

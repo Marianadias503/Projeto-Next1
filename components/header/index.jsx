@@ -5,6 +5,8 @@ import Styles from "./header.module.scss"
 
 
 
+
+
 const Header = () =>{
 
 return <div className={Styles.container}> 
@@ -30,7 +32,8 @@ return <div className={Styles.container}>
 
 <div className={Styles.action}>
 
-<button className={Styles.button}>Fale conosco</button>
+
+<button className={Styles.button}  >Fale Conosco</button>
 
 </div>
 

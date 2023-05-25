@@ -4,6 +4,7 @@
 
 
 .container{
+color: $white-color;
 padding: 34px 180px;
 width: 100%;
 background-color: $purple-color;
@@ -18,14 +19,17 @@ justify-content: space-between;
 .menu {
 
    font-size: 22px;
-   
-
+ 
     a+a{
         margin-left: 38.9px;
     } //a+a= quando um link estiver seguido de outro
 
     
 
+}
+
+.action{
+    text-align: end;
 }
 
 .button{
