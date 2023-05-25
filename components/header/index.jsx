@@ -14,7 +14,7 @@ return <div className={Styles.container}>
 
 <div className={Styles.logotipo}>
 
-<Image src={logo} />
+<Image src={logo} alt="Logo" />
 
 
 </div>
