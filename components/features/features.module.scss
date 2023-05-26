@@ -1,0 +1,77 @@
+
+@import "/styles/mixins/colors.scss";
+@import "/styles/mixins/padding.scss";
+
+
+.container{
+
+    @include padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+     h1{
+        text-align: center;
+        width: 845px;
+        font-size: 65px;
+        font-weight: bold;
+        color: white;
+     }
+
+     p{
+        width: 828px;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        opacity: 0.7;
+        margin-bottom: 8rem;
+       
+     }
+}
+
+
+.features{
+    display: grid; //display grid permite dividir os elementos em colunas
+    grid-template-columns: repeat(2, 1fr); //2 colunas
+    gap: 68px;
+
+
+
+
+
+}   
+
+
+.feature{
+    
+    width: 509px;
+    height: 347px;
+    padding: 32px 35px;
+    background: $white-color;
+    border-radius: 5px;
+    
+    h1 {
+        margin-top: 18px;
+        font-weight: bold;
+        font-size: 41px;
+        color: $purple2-color;
+        width: auto;
+        text-align: left;
+        
+    }
+    p{
+        margin-top: 18px;
+        font-size: 22px;
+        color: #4A4A4A;
+        width: auto;
+        text-align: left;
+        
+    }
+
+
+}
+
