@@ -1,0 +1,109 @@
+
+@import "/styles/mixins/colors.scss";
+@import "/styles/mixins/padding.scss";
+
+.container{
+    background-image: url("/images/fundoWelcome.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include padding;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px 3rem;
+    margin-bottom: 10px;
+}
+
+.texts{
+    padding-top: 100px;
+    span{
+        font-size: 30px;
+        font-weight: 580;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; //400 = fonte normal
+        color: $green2-color;
+
+        
+    }
+
+    h1{
+        margin-top: 16px;
+        font-size: 65px;
+        font-weight: bold;
+        color: $white-color;
+    }
+    p{
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: 380px;
+        opacity: 0.7;
+        color: $white-color;
+    }
+}
+
+.form{ 
+    padding: 38px 31px;    
+   
+    border-radius: 10px;
+    border: 0.5px solid $gray2-color;
+    background-color: $white-color;
+    display: grid;
+    gap: 10px;
+
+ 
+
+
+
+    h1{
+        color: $purple-color;
+        font-weight: bold;
+        font-size: 35px;
+        font-family: 'Gill Sans', 'Gill Sans MT';
+        padding: 0;
+        margin: 0;
+      
+    }
+}
+
+.button{
+    background-color: $green2-color;
+    border-radius: 8px;
+    width: 100%;
+    height: 70px;
+    border: none;
+    color: $white-color;
+}
+
+.form{
+    display: flex;
+    flex-flow: column;
+}
+
+.midia{
+    padding: 22px 17px;
+    background-color: $gray3-color;
+    border: none;
+    font-size: 19px;
+    font-weight: 300;
+    color: $gray4-color;
+    opacity: 0.7;
+    width: 525px;
+    height: 66px;
+    border-radius: 10px;
+    margin-top: 23px;
+}
+
+
+.footer{
+    grid-column-start: 2;
+    text-align: center;
+    font-size: 17px;
+    padding: 0  6rem;
+    line-height: 2rem;
+    color: $gray2-color;
+
+    span{
+        color: $white-color;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,89 @@
+
+@import "/styles/mixins/padding.scss";
+@import "/styles/mixins/colors.scss";
+
+
+.container{
+    @include padding;
+    padding-top: 72px;
+    background-color: $purple3-color;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+
+}
+
+.img{
+    margin-bottom: 4rem;
+}
+
+
+
+.column{
+    
+    
+    margin-top: 4rem;
+
+    
+
+  
+   
+    h1{
+        font-size: 24px;
+        color: $green2-color;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+     
+        
+
+    }
+
+    p{
+        margin-top: 8px;
+        font-size: 22px;
+        color: $white-color;
+    }
+    a{
+       padding: 8px;
+       justify-content: right;
+       
+
+    }
+}
+
+ .alignRight{
+    text-align: center;
+}
+
+
+.icon{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.title{
+        
+    font-size: 29px;
+    color: $white-color;
+    
+}
+
+.paragrafo{
+    margin-top: 2rem;
+    color: $white-color;
+    font-size: 22px;
+}
+.allRightReserved{
+    padding: 6rem 0 1rem;
+    font-size: 20px;
+    color: $gray-color;
+    grid-column: span 4;
+    text-align: center;
+
+}
+
+
+
+
