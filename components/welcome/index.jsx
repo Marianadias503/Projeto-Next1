@@ -19,7 +19,7 @@ const Welcome = () =>{
 
 
     <div className={Styles.image}>
-    <Image src ={BannerWelcome} alt= "Banner Welcome" />
+    <Image  className={Styles.banner} src ={BannerWelcome} alt= "Banner Welcome" />
     </div>
     
 

@@ -13,15 +13,15 @@ export default function Home() {
   return (
    <div className={styles.container}>
 
-          <Header />
+         < Header /> 
 
-          <Welcome />
+          <Welcome /> 
+        
+         <Features /> 
 
-          <Features />
+          <Contato /> 
 
-          <Contato />
-
-          <Footer />
+          <Footer />  
 
           
    </div>

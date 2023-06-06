@@ -1,6 +1,8 @@
 
 @import "/styles/mixins/colors.scss";
 @import "/styles/mixins/padding.scss";
+@import "/styles/mixins/fonts.scss";
+@import "/styles/mixins/responsive.scss";
 
 
 .container{
@@ -17,20 +19,44 @@
      h1{
         text-align: center;
         width: 845px;
-        font-size: 65px;
+        @include sizeLarge;
         font-weight: bold;
         color: white;
+
+        @include Phone{
+            margin-top: -4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -1rem;
+        }
+     
      }
 
      p{
         width: 828px;
         text-align: center;
-        font-size: 30px;
+        @include sizeMedium;
         color: white;
         opacity: 0.7;
         margin-bottom: 8rem;
        
+        @include Phone{
+        
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+     
+       
      }
+
+     h1,p{
+        @include Phone{
+            width: 100%;
+        }
+     }
+
+     
 }
 
 
@@ -38,6 +64,11 @@
     display: grid; //display grid permite dividir os elementos em colunas
     grid-template-columns: repeat(2, 1fr); //2 colunas
     gap: 68px;
+    @include Phone{
+        grid-template-columns: 1fr;
+        gap: 32px;
+
+    }
 
 
 
@@ -61,16 +92,31 @@
         color: $purple2-color;
         width: auto;
         text-align: left;
+        @include Phone{
+            margin-left: -2rem;
+            width: 200px;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
         
     }
     p{
         margin-top: 18px;
-        font-size: 22px;
+        @include sizeSmall;
         color: #4A4A4A;
         width: auto;
         text-align: left;
+        @include Phone{
+            margin-top: 2rem;
+        }
         
     }
+    @include Phone{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+ 
 
 
 }

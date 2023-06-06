@@ -1,6 +1,8 @@
 
 @import "/styles/mixins/padding.scss";
 @import "/styles/mixins/colors.scss";
+@import "/styles/mixins/fonts.scss";
+@import "/styles/mixins/responsive.scss";
 
 
 .container{
@@ -10,11 +12,16 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     
-
+    @include Phone{
+        grid-template-columns: 1fr;
+    }
 }
 
 .img{
     margin-bottom: 4rem;
+    @include Phone{
+        margin-top: 2rem;
+    }
 }
 
 
@@ -34,7 +41,9 @@
         margin-bottom: 2rem;
         margin-top: 3rem;
      
-        
+        @include Phone{
+            margin-top: -2rem;
+        }
 
     }
 
@@ -53,6 +62,9 @@
 
  .alignRight{
     text-align: center;
+    @include Phone{
+        margin-left: -16rem;
+    }
 }
 
 
@@ -60,6 +72,14 @@
  display: flex;
  justify-content: center;
  align-items: center;
+
+ @include Phone{
+    margin-top: 0px;
+    margin-left: -8rem;
+    
+    
+
+ }
 }
 
 
@@ -67,13 +87,21 @@
         
     font-size: 29px;
     color: $white-color;
+
+    @include Phone{
+        margin-top: -2rem;
+    }
     
 }
 
 .paragrafo{
     margin-top: 2rem;
     color: $white-color;
-    font-size: 22px;
+    @include sizeSmall;
+
+    @include Phone{
+        @include sizeMedium;
+    }
 }
 .allRightReserved{
     padding: 6rem 0 1rem;
@@ -81,6 +109,10 @@
     color: $gray-color;
     grid-column: span 4;
     text-align: center;
+
+    @include Phone{
+        grid-column: 1;
+    }
 
 }
 

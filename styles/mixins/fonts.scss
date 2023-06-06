@@ -1,0 +1,82 @@
+
+@import "./responsive.scss";
+
+@mixin  sizeExtra {
+    font-size: 71px;
+@include Phone{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: left;
+
+    align-items:center;
+}
+
+}
+
+@mixin sizeLarge{
+    font-size: 65px;
+    
+
+ 
+    @include Phone{
+        font-size: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+        margin-left: 2rem;
+    }
+}
+@mixin sizeMedium{
+    font-size: 41px;
+ 
+    
+
+ 
+    @include Phone{
+        font-size: 1rem;
+    }
+}
+
+@mixin sizeNormal{
+    font-size: 30px;
+    @include Phone{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+        margin-left: 2rem;
+    }
+    
+
+ 
+    @include Phone{
+        font-size: 1rem;
+    }
+}
+@mixin sizeSmall{
+    font-size: 22px;
+    
+
+ 
+    @include Phone{
+        font-size: 11px;
+    }
+}
+
+
+
+
+@mixin Banner {
+    width: 700px;
+    height: 300px;
+    margin-top: -10rem;
+    margin-left: -8rem;
+
+}
+
+@mixin botao{
+    margin-left: 5rem;
+}

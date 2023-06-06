@@ -1,7 +1,8 @@
 
 @import "/styles/mixins/colors.scss";
 @import "/styles/mixins/padding.scss";
-
+@import "/styles/mixins/responsive.scss";
+@import "/styles/mixins/fonts.scss";
 .container{
     @include padding;
     background-image: url("/images/fundoWelcome.svg");
@@ -14,23 +15,36 @@
   
 
     grid-template-columns: repeat(2, 1fr);
+
+    @include Phone{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+    }
 }
 
 .text{
     h1{
-      
+        @include sizeExtra;
+
+        
         font-weight: bold;
-        font-size: 71px;
+
         color: $white-color;
+
+        @include Phone{
+            margin-left: 1rem;
+        }
   
     }
 
     p{
-        font-size: 30px;
+        @include sizeNormal;
        margin-top: 40px;
         opacity: 0.7;
         color: $white-color;
     }
+
+
 }
 
 .button{
@@ -42,10 +56,28 @@
     font-weight: bold;
     background-color: $white-color;
     color: $purple-color;
+    @include botao;
+    @include Phone{
+        margin-left: 50px;
+    }
 
 }
 
 .image{
     text-align: end;
 
+    @include Phone{
+        text-align: center;
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 12rem;
+        margin-left: -3rem        
+    }
+
+}
+
+.banner{
+    @include Phone{
+        @include Banner;
+    }
 }
