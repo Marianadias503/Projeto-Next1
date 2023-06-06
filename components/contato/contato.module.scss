@@ -24,6 +24,9 @@
         gap: 15px ;
        
     }
+    @include Tablet{
+      margin-bottom: 4rem;
+    }
 }
 
 .texts{
@@ -60,7 +63,7 @@
             
             
         }
-
+        
         
             
         
@@ -79,6 +82,8 @@
             margin-left: 5rem;
             margin-top: 1rem;
         }
+
+       
      
 }
 }
@@ -100,6 +105,20 @@
         
         
     }
+    @include Tablet{
+       margin-top: 7rem;
+        width: 80%;
+        margin-left: 2rem;
+        
+        
+    }
+    @include Laptop{
+        margin-top: 7rem;
+         
+         margin-left: 2rem;
+         
+         
+     }
 
     input{
         @include Phone{
@@ -112,6 +131,9 @@
             
         }
 
+        @include Tablet{
+            width: 80%;
+        }
     }
 
  
@@ -182,5 +204,16 @@
         grid-column-start: 1;
         padding: 0 1rem;
         margin-left: 5rem;
+    }
+    @include Tablet{
+       
+        padding: 0 1rem;
+        
+    }
+    @include Laptop{
+       
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+        
     }
 }

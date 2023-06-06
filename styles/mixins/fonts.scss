@@ -12,6 +12,25 @@
 
     align-items:center;
 }
+@include Tablet{
+    font-size: 50px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: left;
+
+    align-items:center;
+}
+@include Laptop{
+    font-size: 55px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: left;
+
+    align-items:center;
+}
+
 
 }
 
@@ -21,13 +40,32 @@
 
  
     @include Phone{
-        font-size: 32px;
+        font-size: 55px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 1rem;
         margin-bottom: -1rem;
         margin-left: 2rem;
     }
+    @include Tablet{
+        font-size: 45px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: left;
+    
+        align-items:center;
+    }
+    @include Laptop{
+        font-size: 50px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: left;
+    
+        align-items:center;
+    }
+   
 }
 @mixin sizeMedium{
     font-size: 41px;
@@ -55,6 +93,24 @@
     @include Phone{
         font-size: 1rem;
     }
+    @include Tablet{
+        font-size:28px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: left;
+    
+        align-items:center;
+    }
+    @include Laptop{
+        font-size: 22px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: left;
+    
+        align-items:center;
+    }
 }
 @mixin sizeSmall{
     font-size: 22px;
@@ -63,6 +119,24 @@
  
     @include Phone{
         font-size: 11px;
+    }
+    @include Tablet{
+        font-size:15px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: left;
+    
+        align-items:center;
+    }
+    @include Laptop{
+        font-size: 18px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: left;
+    
+        align-items:center;
     }
 }
 

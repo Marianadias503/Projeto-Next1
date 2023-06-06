@@ -20,6 +20,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: max-content;
     }
+    @include Tablet{
+       height: 100%;
+    }
 }
 
 .text{
@@ -33,6 +36,14 @@
 
         @include Phone{
             margin-left: 1rem;
+        }
+        @include Tablet{
+            margin-top: 3rem;
+            width: 100%;
+        }
+        @include Laptop{
+            margin-top: 5rem;
+            width: 100%;
         }
   
     }
@@ -60,6 +71,11 @@
     @include Phone{
         margin-left: 50px;
     }
+    @include Tablet{
+        width: 100%;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
 
 }
 
@@ -72,6 +88,12 @@
         grid-row: 1;
         margin-top: 12rem;
         margin-left: -3rem        
+    }
+    @include Tablet{
+        margin-top: 3rem
+    }
+    @include Laptop{
+        margin-top: 2rem
     }
 
 }

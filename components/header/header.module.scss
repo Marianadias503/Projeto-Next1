@@ -21,8 +21,13 @@ justify-content: space-between;
     padding-top:  1rem;
     padding-bottom: 1rem;
  }
-
-}
+ @include  Tablet{
+    grid-template-columns: repeat(2,1fr);
+ }
+ @include  Laptop{
+    grid-template-columns: repeat(2,1fr);
+ }
+} 
 
 .menu {
 
@@ -42,6 +47,14 @@ justify-content: space-between;
     @include Phone{
         display: none;
        }
+       @include Tablet{
+        display: none;
+       }
+       @include Laptop{
+        display: none;
+       }
+
+
 
     
 }

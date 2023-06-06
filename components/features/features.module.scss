@@ -30,7 +30,7 @@
             align-items: center;
             margin-left: -1rem;
         }
-     
+       
      }
 
      p{
@@ -46,6 +46,7 @@
             margin-bottom: 2rem;
             margin-top: 3rem;
         }
+        
      
        
      }
@@ -54,10 +55,25 @@
         @include Phone{
             width: 100%;
         }
+       
+     
+     }
+     h1,p{
+        @include Phone{
+            width: 100%;
+        }
+       
+     
+     }
+     
+     
+       
+        
+     
      }
 
      
-}
+
 
 
 .features{
@@ -78,9 +94,11 @@
 
 
 .feature{
+    max-width: 509px;
+    max-height: 346px;
     
-    width: 509px;
-    height: 347px;
+    width: 100%;
+    height: 100%;
     padding: 32px 35px;
     background: $white-color;
     border-radius: 5px;
@@ -112,8 +130,7 @@
         
     }
     @include Phone{
-        width: 100%;
-        height: 100%;
+        
         padding: 20px;
     }
  
